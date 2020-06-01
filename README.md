@@ -6,18 +6,21 @@ This project contains the scripts to get the the immigration case status.
 
 The main script, ImmiStatusConsole.py, can be ran in 3 different modes:
 
-### 1. Search Cases Configuration Mode: 
+* Search cases
+* Retrieve cases
+* Compare case status
+
+
+### 1. Search Cases
 This mode allows to provide a list of seed case numbers, and search N sequential cases following each of the seed case numbers. An optional parameters can be set to search cases by exact string match, for example search "I-485" cases, search "Interview Scheduled" cases, etc.
 
 In order to run the script in the "Search Cases" mode, write a configuration file as follows:
 
 config.ini, search all
-`
-[SearchCases]<br/><br/>
-SeedCasesFilePath=<path/to/seed_case_numbers.txt>
-NumberSequentialCases=<N>
-OutputFilePath=<path/to/output/searched_cases.tsv>
-`
+`[SearchCases]`
+`SeedCasesFilePath=<path/to/seed_case_numbers.txt>`
+`NumberSequentialCases=<N>`
+`OutputFilePath=<path/to/output/searched_cases.tsv>`
 
 config.ini, search by exact string match
 `
