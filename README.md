@@ -18,28 +18,28 @@ In order to run the script in the "Search Cases" mode, write a configuration fil
 
 config.ini, search all
 ```
-    [SearchCases]
-    SeedCasesFilePath=<path/to/seed_case_numbers.txt>
-    NumberSequentialCases=<N>
-    OutputFilePath=<path/to/output/searched_cases.tsv>
+[SearchCases]
+SeedCasesFilePath=<path/to/seed_case_numbers.txt>
+NumberSequentialCases=<N>
+OutputFilePath=<path/to/output/searched_cases.tsv>
 ```
 
 config.ini, search by exact string match
-`
+```
 [SearchCases]
 SeedCasesFilePath=<path/to/seed_case_numbers.txt>
 NumberSequentialCases=<N>
 SearchMatch=<search string, for example I-485>
 OutputFilePath=<path/to/output/searched_cases.tsv>
-`
+```
 
 The seed_case_numbers.txt file containing the seed case numbers to search for, should be formatted with one case number per line, such as:
-`
+```
 LIN2000150001
 LIN2000150101
 MSC2000150101
 etc.
-`
+```
 
 Examples can be found in:
 * repo/samples/01_search_case_status_all/
