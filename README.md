@@ -17,7 +17,7 @@ This mode allows to provide a list of seed case numbers, and search N sequential
 In order to run the script in the "Search Cases" mode, write a configuration file as follows:
 
 config.ini, search all
-`[SearchCases]\
+`[SearchCases]
 SeedCasesFilePath=<path/to/seed_case_numbers.txt>`
 `NumberSequentialCases=<N>`
 `OutputFilePath=<path/to/output/searched_cases.tsv>`
